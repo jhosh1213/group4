@@ -1,0 +1,456 @@
+@font-face {
+    font-family: "ElliotSansLight";
+    src: url("./fonts/ElliotSans-Light.ttf");
+    
+}
+@font-face {
+    font-family: "ElliotSansRegular";
+    src: url("./fonts/ElliotSans-Regular.ttf");
+    
+}
+@font-face {
+    font-family: "ElliotSansMedium";
+    src: url("./fonts/ElliotSans-Medium.ttf");
+    
+}
+@font-face {
+    font-family: "ElliotSansBold";
+    src: url("./fonts/ElliotSans-Bold.ttf");
+    
+}
+@font-face {
+    font-family: "heavitas";
+    src: url("./fonts/Heavitas.ttf");
+    font-weight: bolder;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    margin: 0;
+}
+/* Header */
+.header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 200;
+}
+
+.header-first{
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+}
+.logo{
+    width: 70px;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+.logo2{
+    color: white;
+    transition: .1s;
+    cursor: pointer;
+}
+.logo2:hover{
+    color: rgb(46, 45, 45) ;
+}
+ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: "ElliotSansRegular";
+    transition: .1s;
+    
+}
+.highlights a{
+    color: rgb(46, 45, 45);
+}
+a:hover{
+    color: rgb(86, 82, 82);
+}
+
+.menu-bar{
+   
+   display: flex;
+   align-items: center;
+}
+.menu-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+form{
+    width: 100%;
+    border: 1px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    padding: 2px ;
+}
+input{
+    border: none;
+    outline: none;
+    color: black;
+}
+
+
+
+.fa.fa-search{
+    color: black;
+    font-size: 20px;
+    transition: .1s;
+    cursor: pointer;
+    margin: 0px;
+    width: 30px;
+}
+.fa.fa-search:hover{
+    color:rgb(86, 82, 82) ;
+}
+.fa.fa-shopping-cart{
+    color: white;
+    font-size: 20px;
+    margin-left: 0px;
+    transition: .1s;
+    cursor: pointer;
+}
+.fa.fa-shopping-cart:hover{
+    color:rgb(86, 82, 82);
+}
+
+h2{
+    color: rgb(46, 45, 45);
+    margin-left: 20px;
+    font-family: "Heavitas";
+}
+
+
+
+/* Photos*/
+
+.homephoto{
+  height: 800px;
+  width: 900px;
+}
+.front-image1{
+    
+    background: url(images/homephoto.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+   
+}
+h1{
+    color: rgb(226, 215, 215);  
+    font-family: "Heavitas" ;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.shopnow-button{
+    
+    margin-bottom: 300px;
+    margin-top: 0px;
+    width: 150px;
+    height: 50px;
+    font-family: "ElliotSansBold";
+    font-size: 20px;
+    background-color:transparent;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+    transition: .1s;
+    cursor: pointer;
+}
+.shopnow-button:hover{
+    background-color:rgb(226, 215, 215) ;
+    color: rgb(46, 45, 45);
+    border-color: rgb(226, 215, 215);
+}
+.front-image2{
+    
+    background-color: gray;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 30px;
+    background-color:  black;
+
+}
+
+.gender-photo1{
+    width: 400px;
+    background: url(images/male-phote.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: .2s;
+}
+.gender-photo1:hover{
+    transform:scale(1.1)
+    
+}
+
+.gender-photo2{
+   
+    width: 400px;
+    background: url(images/female-photo.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: .2s;
+    
+}
+.gender-photo2:hover{
+    transform:scale(1.1);
+    
+}
+
+.brand-photo1{
+    
+    background-color: black;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+  
+}
+button.overlay-button{
+    border-style: solid;
+}
+
+
+.overlay-button{
+    color: white;
+    background: transparent;
+    border-color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: ElliotSansBold;
+    border-style: solid;
+
+}
+.overlay-button:hover{
+    background-color:rgb(226, 215, 215) ;
+    color: rgb(46, 45, 45);
+    border-color: rgb(226, 215, 215) ;
+    cursor: pointer;
+}
+.overlay{
+    background: rgb(0 , 0 , 0 , .6);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .25s;
+    
+  
+}
+.overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.overlay:hover {
+    opacity:1;
+    cursor: pointer;
+    
+}
+.overlay:hover > *{
+    transform: translateY(0);
+}
+.nike-male{
+    background: url(images/nike-male.jpg);
+    width: 350px;
+    margin-left: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.jordan-male{
+    background: url(images/jordan-male2.jpg);
+    width: 350px;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.adidas-male{
+    background: url(images/adidas-male.jpg);
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.brand-photo2{
+    
+    background-color: black;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.nike-female{
+    background: url(images/nike-female.jpg);
+    width: 350px;
+    margin-left: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.jordan-female{
+    background: url(images/jordan-female.jpg);
+    width: 350px;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.adidas-female{
+    background: url(images/adidas-female.jpg);
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+/* footer */
+.footer{
+    background-color:  rgb(28, 27, 27);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+   
+}
+.copyright{
+    width: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-family: "ElliotSansRegular";
+    
+
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.fa {
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa.fa-facebook{
+    font-size: 40px;
+  }
+  .fa.fa-instagram{
+    font-size: 40px;
+  }
+  .fa.fa-twitter{
+    font-size: 40px;
+  }
+    
+      
+  .aboutUs{
+    margin-top: 100px;
+    height: 500px;
+    color: rgb(226, 215, 215);
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "ElliotSansLight";
+
+}
+
+    
+      
+
+
+
+

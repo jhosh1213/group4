@@ -1,0 +1,162 @@
+.shop-body{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+    
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    width: 100px;
+    
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    
+    width:1000px;
+    
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family:"ElliotSansLight";
+    margin-right: 100px;
+    margin-left: 30px;
+}
+
+.a-shop{
+    color: white;
+    margin-bottom: 20px;
+    font-family: "ElliotSansLight";
+
+}
+.ul-shop li{
+    display: flex;
+}
+
+
+/* shoes */
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    
+}
+.container .shoes1{
+    width: 23%;
+    min-width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+    font-family: ElliotSansLight;
+    position: relative;
+}
+.container .shoes1 img{
+    width: 100%;
+    
+}
+.image{
+    position: relative;
+}
+
+/* product details  */
+#productdet{
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    color: white;
+}
+#productdet .main-image{
+    width: 30%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.sub-images{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.sub-images-pc{
+    flex-basis: 23%;
+    cursor: pointer;
+}
+.descriptions{
+    margin-left: 30px;
+    font-family: "ElliotSansMedium";
+    
+}
+.descriptions input{
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+}
+.descriptions .shopnow-button{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.descriptions p{
+    width: 550px;
+    margin-top: 0px;
+    font-size: 13px;
+    font-family: "ElliotSansLight";
+}
+.descriptions h6{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.product-body{
+    display: flex;
+    flex-direction: column;
+}
+/* cart  */
+#cart{
+    margin-top: 80px;
+    color: white;
+    font-family: "ElliotSansLight";
+    
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 5px;
+}
+#cart table thead td{
+    font-family: "ElliotSansBold" ;
+    text-transform: uppercase;
+    padding: 10px   ;
+}
+#cart table img{
+    width: 70px;
+}
